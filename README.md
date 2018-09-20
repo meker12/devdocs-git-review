@@ -218,20 +218,30 @@ This command merges commits to the current branch and creates a unified history.
 
 #### Useful forms
 
-`git merge <branch name>`
-Merge the changes from another branch into this one and create a new merge commit.
+<dl>
+  <dt><code>git merge &lt;branch name&gt;</code></dt>
+  <dd>Merge the changes from another branch into this one and create a new merge commit.</dd>
+</dl>
 
-`git merge <remote name>/<branch name>`
-Merge the changes from a remote branch into this one and create a new merge commit.
+<dl>
+  <dt><code>git merge &lt;remote name&gt;/&lt;branch name&gt;</code></dt>
+  <dd>Merge the changes from a remote branch into this one and create a new merge commit.</dd>
+</dl>
 
-`git merge --ff-only <branch name>`
-Moves the commit pointer to the most recent commit of the incoming branch. Only works if there have been no changes to the current branch.
+<dl>
+  <dt><code>git merge --ff-only &lt;branch name&gt;</code></dt>
+  <dd>Moves the commit pointer to the most recent commit of the incoming branch. Only works if there have been no changes to the current branch.</dd>
+</dl>
 
-`git merge --continue`
-Continues the merging process after resolving merge conflicts.
+<dl>
+  <dt><code>git merge --continue</code></dt>
+  <dd>Continues the merging process after resolving merge conflicts.</dd>
+</dl>
 
-`git merge --abort`
-Aborts the merge process when a merge conflict occurs.
+<dl>
+  <dt><code>git merge --abort</code></dt>
+  <dd>Aborts the merge process when a merge conflict occurs.</dd>
+</dl>
 
 #### Assignment 8
 
@@ -243,8 +253,10 @@ This command combines `git fetch` and `git merge` into a single command.
 
 #### Useful forms
 
-`git pull <remote name>`
-Fetch the remote copy of the current branch and do a merge.
+<dl>
+  <dt><code>git pull &lt;remote name&gt;</code></dt>
+  <dd>Fetch the remote copy of the current branch and do a merge.</dd>
+</dl>
 
 ### `git push`
 
@@ -252,11 +264,15 @@ This command updates a remote repository branch.
 
 #### Useful forms
 
-`git push <remote name> <branch name>`
-Pushes your branch changes to the specified remote repository branch. A new branch is created if it does not already exist.
+<dl>
+  <dt><code>git push &lt;remote name&gt; &lt;branch name&gt;</code></dt>
+  <dd>Pushes your branch changes to the specified remote repository branch. A new branch is created if it does not already exist.</dd>
+</dl>
 
-`git push -u <remote name> <branch name>`
-Same as the previous command but also links this branch to the remote repository branch.
+<dl>
+  <dt><code>git push -u &lt;remote name&gt; &lt;branch name&gt;</code></dt>
+  <dd>Same as the previous command but also links this branch to the remote repository branch.</dd>
+</dl>
 
 #### Assignment 9
 
@@ -270,11 +286,15 @@ This command lets you replay commit changes from one branch into your current br
 
 #### Useful forms
 
-`git cherry-pick <commit hash>`
-Apply a single commit change.
+<dl>
+  <dt><code>git cherry-pick &lt;commit hash&gt;</code></dt>
+  <dd>Apply a single commit change.</dd>
+</dl>
 
-`git cherry-pick <commit hash1> <commit hash2> ...`
-Apply multiple commit changes in the given order.
+<dl>
+  <dt><code>git cherry-pick &lt;commit hash1&gt; &lt;commit hash2&gt; ...</code></dt>
+  <dd>Apply multiple commit changes in the given order.</dd>
+</dl>
 
 #### Assignment 10
 
@@ -288,8 +308,10 @@ This command moves or renames files. It is a combination of `git rm` and `git ad
 
 #### Useful forms
 
-`git mv <filepath> <new filepath>`
-Move a file while keeping track of it in Git.
+<dl>
+  <dt><code>git mv &lt;filepath&gt; &lt;new filepath&gt;</code></dt>
+  <dd>Move a file while keeping track of it in Git.</dd>
+</dl>
 
 #### Assignment 11
 
@@ -301,8 +323,10 @@ This command deletes files and stops git from tracking the file.
 
 ### Useful forms
 
-`git rm <filepath>`
-Delete a specific file and remove it from tracking
+<dl>
+  <dt><code>git rm &lt;filepath&gt;</code></dt>
+  <dd>Delete a specific file and remove it from tracking</dd>
+</dl>
 
 #### Assignment 12
 
@@ -314,8 +338,10 @@ This command creates a new commit that reverses changes in a specific commit in 
 
 #### Useful forms
 
-`git revert <commit hash>`
-Undo the changes done in a commit in a new commit.
+<dl>
+  <dt><code>git revert &lt;commit hash&gt;</code></dt>
+  <dd>Undo the changes done in a commit in a new commit.</dd>
+</dl>
 
 #### Assignment 12
 
@@ -325,8 +351,17 @@ Undo the deletion and renaming of the `new-file.md` file.
 
 ### `git commit --amend`
 
+This command lets you update the commit message of the most recent commit.
+
 ### `git push -f`
+
+This command overwrites the history of a remote branch with the history of the current local branch.
 
 ### `git reset`
 
+This command will undo all staged and unstaged changes and move the commit pointer to a specific point in history.
+
 ### `git rebase`
+
+This command allows you to directly manipulate the commit history of a branch.
+It is useful for squash and rebase workflows.
