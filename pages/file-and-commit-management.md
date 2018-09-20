@@ -11,9 +11,10 @@ This command moves or renames files. It is a combination of `git rm` and `git ad
   <dd>Move a file while keeping track of it in Git.</dd>
 </dl>
 
-## Assignment 10
-
-Rename the `new-file.md` file to `old-file.md` and commit the change.
+<details>
+  <summary>Assignment 10</summary>
+  <p>Rename the <code>new-file.md</code> file to <code>old-file.md</code> and commit the change.</p>
+</details>
 
 ## `git rm`
 
@@ -26,9 +27,10 @@ This command deletes files and stops git from tracking the file.
   <dd>Delete a specific file and remove it from tracking</dd>
 </dl>
 
-## Assignment 12
-
-Delete `old-file.md` and commit the change.
+<details>
+  <summary>Assignment 11</summary>
+  <p>Delete <code>old-file.md</code> and commit the change.</p>
+</details>
 
 ## `git revert`
 
